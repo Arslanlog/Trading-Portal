@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Code');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: 'border-box';
+    user-select: none;
+    font-family: "Lato", sans-serif;
+}
+body{
+  font-family: 'Fira Code', monospace;
+}
+.members-area
+{
+    font-family:serif;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: right;
+    background-color:white;
+}
+.members-area a
+{
+    color: black;
+    text-decoration: none;
+    text-align: right;
+    font-size: 15px;
+    padding:5px 5px;
+    line-height: 50px;
+}
+/* .members-area :hover
+{
+    background-color: rgb(34, 139, 34);
+} */
+
+.main-div{
+    width: 100%;
+    height: 50px;
+    background :-webkit-linear-gradient(left, #3931af, #00c6ff);
+}
+.img-logo{
+    position: absolute;
+    z-index: 6;
+    top: 18px;
+    left: 140px;
+    transform: translateY(-10px);
+}
+.img-logo img
+{
+    height:100px;
+    width: 100px;
+}
+@media only screen and (max-width:788px){
+    .img-logo{
+        left: 5px;
+
+    }
+    .img-logo img{
+        width: 50px;
+        height: 50px;
+    }
+}
+.main-div ul{
+    text-align: right;
+}
+.main-div ul li {
+    list-style: none;
+    display: inline-block;
+ }
+.main-div ul li a{
+     text-decoration:none;
+     color: white;
+     line-height: 48px;
+     padding: 3px 30px;
+     margin: 0 10px;
+     position: relative;
+ }
+.main-div ul li a::before{
+     content: "";
+     width: 15px;
+     height: 15px;
+     position:absolute;
+     left: 14px;
+     bottom: 7px;
+     border: 1px solid #3931af;
+     border-width: 0 0 2px 2px;
+     transition: all 0.3s;
+     opacity: 0;
+ }
+.main-div ul li a::after{
+    content: "";
+    width: 15px;
+    height: 15px;
+    position:absolute;
+    top: 7px;
+    right: 14px;
+    border: 1px solid #3931af;
+    border-width:  2px 2px 0 0;
+    transition: all 0.3s;
+    opacity: 0;
+}
+.main-div ul li :hover::before{
+    left: 0;
+    bottom: 0;
+    opacity: 1;
+}
+.main-div ul li :hover::after{
+    top: 0;
+    right: 0;
+    opacity: 1;
+}
+.main-div ul li:hover{
+    background-color: white;
+    color: black;
+    height: 50px;
+}
+.main-div ul li:hover a{
+    color:black
+}
+.side-bar{
+    display: none;
+}
+@media only screen and (max-width:788px)
+{
+
+  .side-bar{
+    display: block;
+  }
+  .main-div{
+    display: none;
+  }
+
+}
+/* .active, nav ul li:hover
+{
+    background-color: #035a9e;
+    height: 45px;
+
+} */

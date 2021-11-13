@@ -1,0 +1,24 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'i',
+1 verbose cli   '@material-ui/core/IconButton'
+1 verbose cli ]
+2 info using npm@6.14.15
+3 info using node@v14.18.0
+4 verbose npm-session c56de357fed496ff
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData error for file:@material-ui\core\IconButton Could not install from "@material-ui\core\IconButton" as it does not contain a package.json file.
+8 timing stage:rollbackFailedOptional Completed in 4ms
+9 timing stage:runTopLevelLifecycles Completed in 7408ms
+10 verbose stack Error: ENOENT: no such file or directory, open 'D:\Arslan\project\@material-ui\core\IconButton\package.json'
+11 verbose cwd D:\Arslan\project
+12 verbose Windows_NT 10.0.17763
+13 verbose argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "i" "@material-ui/core/IconButton"
+14 verbose node v14.18.0
+15 verbose npm  v6.14.15
+16 error code ENOLOCAL
+17 error Could not install from "@material-ui\core\IconButton" as it does not contain a package.json file.
+18 verbose exit [ 1, true ]

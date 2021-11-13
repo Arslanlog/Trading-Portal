@@ -1,0 +1,11 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  background-color: #e5e5e5;
+}
+.main-div{
+  width: 300px;
+  height: 500px;
+  background-color: white;
+}
